@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:id="@+id/liner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview7"
+                android:hint="@string/product"
+                android:textSize="18dp"
+                android:layout_weight=".75"
+                android:clickable="true" />
+
+            <Spinner
+                android:id="@+id/spinernamep"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight=".25"
+                android:textAlignment="center"
+                android:background="@drawable/spinner_background"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/unitno"
+                android:textSize="18dp"
+                android:layout_weight=".56"
+                android:clickable="true" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:id="@+id/unitnopro"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_weight=".44"
+                android:enabled="true"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:background="@drawable/border_for_textview" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/type"
+                android:textSize="18dp"
+                android:layout_weight=".75"
+                android:clickable="true" />
+
+            <Spinner
+                android:id="@+id/spinertype"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight=".25"
+                android:textAlignment="center"
+                android:background="@drawable/spinner_background"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/liner5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview9"
+                android:hint="@string/service"
+                android:textSize="18dp"
+                android:layout_weight=".75"
+                android:clickable="true" />
+
+            <Spinner
+                android:id="@+id/spinerservice"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight=".25"
+                android:textAlignment="center"
+                android:background="@drawable/spinner_background"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

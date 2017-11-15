@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/leadLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:id="@+id/Profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/liner5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:text="@string/patientname"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/pname"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight=".55"
+                    android:background="@drawable/border_for_textview"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight=".45"
+                    android:text="@string/service"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/ser"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".55"
+                    android:background="@drawable/border_for_textview"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:maxLines="7"
+                    android:minLines="3"
+                    android:scrollbars="vertical"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/liner4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:text="@string/seq"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/seq"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight=".55"
+                    android:background="@drawable/border_for_textview"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/liner7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:text="@string/remain"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/remain"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight=".55"
+                    android:background="@drawable/border_for_textview"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:id="@+id/liner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textview7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".43"
+                android:clickable="true"
+                android:hint="@string/date"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textstartdate"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".57"
+                android:background="@drawable/border_for_textview"
+                android:drawableRight="@drawable/calender"
+                android:editable="false"
+                android:focusable="false"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/liner6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text2"
+                android:text="@string/clinic"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"
+                android:layout_weight=".53"
+
+                />
+
+            <Spinner
+                android:id="@+id/spiner"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight=".47"
+                android:textAlignment="center"
+                android:background="@drawable/spinner_background"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/liner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/stime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".43"
+                android:clickable="true"
+                android:hint="@string/starttime"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textstarttime"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".57"
+                android:background="@drawable/border_for_textview"
+                android:drawableRight="@drawable/clock"
+                android:editable="false"
+                android:focusable="false"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/endtime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".43"
+                android:clickable="true"
+                android:hint="@string/endtime"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textendtime"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".57"
+                android:background="@drawable/border_for_textview"
+                android:drawableRight="@drawable/clock"
+                android:editable="false"
+                android:focusable="false"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:weightSum="1">
+
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/text"
+                android:hint="@string/noofcust"
+                android:textSize="18dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:layout_weight=".75"
+                />
+
+            <TextView
+                android:id="@+id/editText2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_for_textview"
+                android:layout_weight=".25"
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/liner8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/text1"
+                android:hint="@string/noofservedcust"
+                android:textSize="18dp"
+                android:layout_weight=".75"
+                android:clickable="true"/>
+
+
+            <TextView
+                android:id="@+id/editText3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_for_textview"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:layout_weight=".25"/>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>

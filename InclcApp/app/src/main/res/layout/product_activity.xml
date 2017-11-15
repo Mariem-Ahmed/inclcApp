@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:id="@+id/liner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview7"
+                android:hint="@string/product"
+                android:textSize="18dp"
+                android:layout_weight=".75"
+                android:clickable="true" />
+
+            <Spinner
+                android:id="@+id/spinername"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight=".25"
+                android:textAlignment="center"
+                android:background="@drawable/spinner_background"
+                />
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/liner2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:weightSum="1">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="@string/sessionno"-->
+                <!--android:textSize="18dp"-->
+                <!--android:layout_weight=".56"-->
+                <!--android:clickable="true" />-->
+
+            <!--<EditText-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:id="@+id/sessionnoprod"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="16dp"-->
+                <!--android:layout_weight=".44"-->
+                <!--android:enabled="true"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:textAlignment="center"-->
+                <!--android:inputType="number"-->
+                <!--android:background="@drawable/border_for_textview" />-->
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/liner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/price"
+                android:textSize="18dp"
+                android:layout_weight=".56"
+                android:clickable="true" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:id="@+id/priceprod"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_weight=".44"
+                android:enabled="true"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:background="@drawable/border_for_textview" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/liner4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/unitno"
+                android:textSize="18dp"
+                android:layout_weight=".56"
+                android:clickable="true" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:id="@+id/unitnopro"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_weight=".44"
+                android:enabled="true"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:background="@drawable/border_for_textview" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/type"
+                android:textSize="18dp"
+                android:layout_weight=".75"
+                android:clickable="true" />
+
+            <Spinner
+                android:id="@+id/spinertype"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight=".25"
+                android:textAlignment="center"
+                android:background="@drawable/spinner_background"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/liner5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview9"
+                android:hint="@string/service"
+                android:textSize="18dp"
+                android:layout_weight=".75"
+                android:clickable="true" />
+
+            <Spinner
+                android:id="@+id/spinerservice"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight=".25"
+                android:textAlignment="center"
+                android:background="@drawable/spinner_background"
+                />
+
+        </LinearLayout>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/material_design_android_floating_action_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            fab:menu_animationDelayPerItem="55"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_buttonSpacing="0dp"
+            fab:menu_colorNormal="@color/colorPrimary"
+            fab:menu_colorPressed="#dc4b3f"
+            fab:menu_colorRipple="#99d4d4d4"
+            fab:menu_fab_size="normal"
+            fab:menu_icon="@drawable/fab_add"
+            fab:menu_labels_colorNormal="#333"
+            fab:menu_labels_colorPressed="#444"
+            fab:menu_labels_colorRipple="#66efecec"
+            fab:menu_labels_cornerRadius="3dp"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            fab:menu_labels_margin="0dp"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_padding="8dp"
+            fab:menu_labels_position="left"
+            fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            >
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/DelProductfab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="210dp"
+                android:src="@drawable/cancel"
+                android:visibility="invisible"
+                app:elevation="6dp"
+                app:pressedTranslationZ="12dp"
+                fab:fab_colorNormal="@color/colorPrimaryDark"
+                fab:fab_label="Delete Product"
+                fab:fab_size="mini" />
+
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </LinearLayout>
+
+</LinearLayout>
